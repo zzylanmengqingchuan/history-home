@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# 本项目非 monorepo，勿生成空 workspace
+pnpm-workspace.yaml

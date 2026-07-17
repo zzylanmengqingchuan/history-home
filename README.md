@@ -4,7 +4,26 @@ Agent 集训 Demo：40 人共创 · 历史人物平行宇宙。
 
 用 **Next.js App Router + shadcn/ui（Neo-Brutalism 主题）** 做的单页展示站，重点是 30 秒讲清玩法：模板创作 → 模拟故事 → 世界线 / 人物 / 日报 / 本地记忆。
 
-## 快速启动
+## 在线演示（交给老师看这个）
+
+**公网链接（无需安装依赖）：**
+
+👉 **https://zzylanmengqingchuan.github.io/history-home/**
+
+| 项 | 地址 |
+|---|---|
+| 在线 Demo | https://zzylanmengqingchuan.github.io/history-home/ |
+| 源码仓库 | https://github.com/zzylanmengqingchuan/history-home |
+
+推送到 `main` 后，GitHub Actions 会自动重新构建并发布到 Pages。
+
+本地也可手动发布：
+
+```bash
+pnpm deploy   # 静态导出并推到 gh-pages（备用通道）
+```
+
+## 快速启动（本地开发）
 
 ```bash
 pnpm install
@@ -14,8 +33,9 @@ pnpm dev
 浏览器打开 [http://localhost:3000](http://localhost:3000)。
 
 ```bash
-pnpm build   # 生产构建
-pnpm start   # 启动生产服务
+pnpm build         # 普通构建
+pnpm build:pages   # GitHub Pages 静态导出（带 basePath）
+pnpm start         # 启动生产服务（非静态模式）
 ```
 
 ## 项目结构
